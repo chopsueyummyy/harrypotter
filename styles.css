@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1a1a1a;
+    color: #f5deb3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: url('banner.jpg') no-repeat center center/cover;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #222;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: #b8860b;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    margin: 40px 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+img {
+    width: 60%;
+    border: 3px solid #d4af37;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b8860b;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #f5deb3;
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    img {
+        width: 80%;
+    }
+} 
+
+.spells-container, .creatures-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.spell-card, .creature-card {
+    background: rgba(255, 215, 0, 0.1);
+    border: 2px solid #d4af37;
+    padding: 15px;
+    width: 30%;
+    min-width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.spell-card h3, .creature-card h3 {
+    color: #d4af37;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: Georgia;
+}
+
+/* Add smooth transition to both cards */
+.spell-card, .creature-card {
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effects for spell and creature cards */
+.spell-card:hover, .creature-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px gold;
+}
+
+/* Add the .owl class for styling */
+.owl {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    transition: bottom 3s ease-in-out; /* Smooth animation for moving the owl */
+}
+
+
+@media (max-width: 768px) {
+    .spells-container, .creatures-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spell-card, .creature-card {
+        width: 80%;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Hogwarts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Wizarding World</h1>
+        <p>Discover the magic of Hogwarts, spells, and fantastic creatures.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Hogwarts</a></li>
+            <li><a href="#houses">Hogwarts Houses</a></li>
+            <li><a href="#spells">Spells</a></li>
+            <li><a href="#creatures">Magical Creatures</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Hogwarts</h2>
+        <p>Hogwarts is the finest school of witchcraft and wizardry, located in Scotland. It has four houses, each founded by a legendary wizard or witch.</p>
+        <img src="hogwarts.jpg" alt="Hogwarts Castle">
+    </section>
+
+    <section id="houses">
+        <h2>Hogwarts Houses</h2>
+        <img src="hogwarts-houses.avif" alt="Hogwarts Houses">
+        <p>Explore the four houses: Gryffindor, Hufflepuff, Ravenclaw, and Slytherin.</p>
+    </section>
+    
+    <section id="spells">
+        <h2>Popular Spells</h2>
+        <div class="spells-container">
+            <div class="spell-card">
+                <a href="https://harrypotter.fandom.com/wiki/Levitation_Charm" target="_blank">
+                    <h3>Wingardium Leviosa</h3>
+                </a>                
+                <p>A levitation charm to make objects float.</p>
+            </div>
+            <div class="spell-card">
+                <a href="https://harrypotter.fandom.com/wiki/Disarming_Charm" target="_blank">
+                    <h3>Expelliarmus</h3>
+                </a>  
+                <p>Disarms an opponent by knocking their wand away.</p>
+            </div>
+            <div class="spell-card">
+                <a href="https://harrypotter.fandom.com/wiki/Patronus_Charm" target="_blank">
+                    <h3>Expecto Patronom</h3>
+                </a>
+                <p>Summons a Patronus to ward off Dementors.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="creatures">
+        <h2>Magical Creatures</h2>
+        <div class="creatures-container">
+            <div class="creature-card">
+                <a href="https://harrypotter.fandom.com/wiki/Hippogriff" target="_blank">
+                    <h3>Hippogriff</h3>
+                </a>
+                <p>A majestic creature, part eagle, part horse.</p>
+            </div>
+            <div class="creature-card">
+                <a href="https://harrypotter.fandom.com/wiki/Thestral" target="_blank">
+                    <h3>Thestral</h3>
+                </a>
+                <p>Invisible to those who haven't witnessed death.</p>
+            </div>
+            <div class="creature-card">
+                <a href="https://harrypotter.fandom.com/wiki/House-elf" target="_blank">
+                    <h3>House Elves</h3>
+                </a>
+                <p>Magical beings known for their loyalty and magic.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Owl Post</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send via Owl</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Wizarding World. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
