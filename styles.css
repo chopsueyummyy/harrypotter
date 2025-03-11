@@ -139,25 +139,22 @@ button {
     font-family: Georgia;
 }
 
-/* Add smooth transition to both cards */
 .spell-card, .creature-card {
     transition: 0.3s ease-in-out;
 }
 
-/* Hover effects for spell and creature cards */
 .spell-card:hover, .creature-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 0 20px gold;
 }
 
-/* Add the .owl class for styling */
 .owl {
     position: fixed;
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
-    transition: bottom 3s ease-in-out; /* Smooth animation for moving the owl */
+    transition: bottom 3s ease-in-out; 
 }
 
 
