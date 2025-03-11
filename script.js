@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert(`Congratulations! You have been sorted into ${randomHouse}.`);
   });
 
-  // ✨ Magical Hover Effect (Spells & Creatures)
+  //Magical Hover Effect (Spells & Creatures)
   document.querySelectorAll(".spell-card, .creature-card").forEach((card) => {
       card.addEventListener("mouseenter", function () {
           this.style.transform = "translateY(-10px) scale(1.05)";
@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  // 📜 Owl Post Animation
+  //Owl Post Animation
   document.querySelector("form").addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevents actual form submission
+      event.preventDefault(); 
 
       const form = this;
       const owl = document.createElement("img");
-      owl.src = "200w.gif"; // Replace with an owl GIF or animated image
+      owl.src = "200w.gif";
       owl.style.position = "fixed";
       owl.style.bottom = "0px";
       owl.style.left = "50%";
@@ -52,13 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(owl);
 
       setTimeout(() => {
-          owl.style.bottom = "100vh"; // Makes the owl fly away
+          owl.style.bottom = "100vh";
       }, 100);
 
       setTimeout(() => {
           alert("Your message has been sent via Owl Post!");
           document.body.removeChild(owl);
-          form.reset(); // Clears the form after submission
+          form.reset();
       }, 3000);
   });
 });
